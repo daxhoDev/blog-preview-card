@@ -50,7 +50,6 @@ body {
   display: flex;
   justify-content: center;
   border-radius: 12px;
-  margin-block-end: 0.5rem;
 }
 
 .card__tag {
@@ -59,7 +58,7 @@ body {
   font-weight: var(--bold-font-weight);
   border-radius: 4px;
 
-  padding: 0.5rem 0.8rem;
+  padding: 0.4rem 0.8rem;
   align-self: flex-start;
 }
 
@@ -93,9 +92,10 @@ body {
 }
 
 .author__avatar {
-  width: 1.5rem;
+  width: 2rem;
 }
 
 .author__name {
+  font-size: 0.9rem;
   font-weight: var(--bold-font-weight);
 }
