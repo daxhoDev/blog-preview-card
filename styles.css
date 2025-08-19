@@ -50,6 +50,7 @@ body {
   display: flex;
   justify-content: center;
   border-radius: 12px;
+  margin-block-end: 0.5rem;
 }
 
 .card__tag {
@@ -58,7 +59,7 @@ body {
   font-weight: var(--bold-font-weight);
   border-radius: 4px;
 
-  padding: 0.3rem 0.8rem;
+  padding: 0.5rem 0.8rem;
   align-self: flex-start;
 }
 
@@ -81,17 +82,17 @@ body {
   color: var(--gray-500);
   font-weight: 500;
   line-height: 1.5rem;
+  margin-block-end: 0.5rem;
 }
 
 .card__author {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-block-start: 0.5rem;
 }
 
 .author__avatar {
-  width: 2.5rem;
+  width: 2rem;
 }
 
 .author__name {
