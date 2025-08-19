@@ -87,7 +87,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 0.5rem;
+  margin-block-start: 0.5rem;
 }
 
 .author__avatar {
@@ -96,14 +96,4 @@ body {
 
 .author__name {
   font-weight: var(--bold-font-weight);
-}
-
-@media (max-width: 25rem) {
-  * {
-    font-size: 97%;
-  }
-
-  .card__author {
-    gap: 0.97rem;
-  }
 }
