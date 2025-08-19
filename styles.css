@@ -1,0 +1,109 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+
+  /* Font wights */
+  --default-font-weight: 500;
+  --bold-font-weight: 800;
+
+  /* font-sizes */
+  --default-font-size: 1rem;
+  --small-font-size: 0.85rem;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: var(--default-font-weigth);
+  font-size: var(--default-font-size);
+}
+
+body {
+  background-color: var(--yellow);
+  font-family: "Figtree", sans-serif;
+
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0 black;
+
+  width: 88%;
+  max-width: 24rem;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card__image-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.card__tag {
+  background-color: var(--yellow);
+  font-size: var(--small-font-size);
+  font-weight: var(--bold-font-weight);
+  border-radius: 4px;
+
+  padding: 0.3rem 0.8rem;
+  align-self: flex-start;
+}
+
+.card__published {
+  font-size: var(--small-font-size);
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: var(--bold-font-weight);
+  cursor: pointer;
+}
+
+.card__title:hover,
+.card__title:active {
+  color: var(--yellow);
+}
+
+.card__description {
+  color: var(--gray-500);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.author__avatar {
+  width: 2.5rem;
+}
+
+.author__name {
+  font-weight: var(--bold-font-weight);
+}
+
+@media (max-width: 400px) {
+  * {
+    font-size: 97%;
+  }
+
+  .card__author {
+    gap: 0.97rem;
+  }
+}
