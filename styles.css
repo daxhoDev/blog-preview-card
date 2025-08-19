@@ -98,7 +98,7 @@ body {
   font-weight: var(--bold-font-weight);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   * {
     font-size: 97%;
   }
